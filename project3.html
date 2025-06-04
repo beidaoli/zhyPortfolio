@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目详情滚动定位</title>
+    <title>Snowline - 可视化项目展示</title>
+  <link rel="stylesheet" href="css/project2.css"> 
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 页眉部分 -->
+        <header class="header">
+        <div class="logo nav-btn" data-target="home.html">Snowline</div>
+        <nav class="nav">
+            <div class="tab nav-btn" data-target="profile.html">个人简介</div>
+            <div class="tab nav-btn" data-target="projects.html">项目经历</div>
+            <div class="tab nav-btn" data-target="contact.html">联系方式</div>
+        </nav>
+        </header>
+        
+        <!-- Footer Padding -->
+        <div class="footer-space"></div>
+        <div class="footer-space"></div>
+        <div class="footer-space"></div>
+        
+        <!-- 主内容区 -->
+        <main class="main-content">
+            <section class="section-title">
+                <h1 class="title-text">可视化项目</h1>
+                <div class="title-underline"></div>
+            </section>
+            
+            <!-- 项目卡片 -->
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-info">
+                        <h2 class="project-name">食物营养成分数据可视化设计</h2>
+                        <!-- 修复 data-target 属性 -->
+                        <button class="project-button" data-target="food-details">查看详情</button>
+                    </div>
+                    <img class="project-image" src="./assets/p3.png" alt="食物营养成分数据可视化设计">
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-info">
+                        <div class="project-content">
+                            <div class="project-name">To be continued...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 项目详情 -->
+            <div class="project-detail" id="food-details">
+                <div class="detail-card"></div>
+                <div class="detail-title">
+                    食物营养成分数据可视化设计
+                    <div class="title-indicator"></div>
+                </div>
+                <div class="detail-date">2024.11-2024.12</div>
+                <div class="detail-subtitle">
+                    <span>《跨媒体数据可视化》</span>
+                    <span class="bold">课程作业</span>
+                </div>
+                <div class="detail-description">
+                    <p>本项目依托于<span class="underline">kaggle：FoodNutritionalFacts</span>，通过对常见的1000+种食物的详细营养（来源于kaggle开源数据集）成分进行可视化分析，产出一份静态数据可视化作品，为用户健康饮食提供参考，也为营养学者等相关人员提供决策支持。</p>
+                    <p>采取的数据分析方法有：预处理时⼿动打标+Jupyter notebook，具体分析时使⽤tableau、flourish、python等进⾏可视化图表的绘制。</p>
+                </div>
+                <img class="detail-image" src="./assets/p31.png" alt="食物营养成分数据可视化">
+            </div>
+        </main>
+        <!-- Footer Padding -->
+        <div class="footer-space"></div>
+
+        <!-- Footer Image -->
+        <footer class="footer">
+        <img src="./assets/footer.png" alt="页脚图像" class="footer-img">
+        </footer>
+        <script src="./js/main.js" defer></script>
+    </div>
+</body>
+</html>

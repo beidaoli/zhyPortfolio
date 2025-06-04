@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目详情滚动定位</title>
+    <title>Snowline - 交互设计展示</title>
+  <link rel="stylesheet" href="css/project2.css"> 
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 页眉部分 -->
+        <header class="header">
+        <div class="logo nav-btn" data-target="home.html">Snowline</div>
+        <nav class="nav">
+            <div class="tab nav-btn" data-target="profile.html">个人简介</div>
+            <div class="tab nav-btn" data-target="projects.html">项目经历</div>
+            <div class="tab nav-btn" data-target="contact.html">联系方式</div>
+        </nav>
+        </header>
+
+        <!-- Footer Padding -->
+        <div class="footer-space"></div>
+        <div class="footer-space"></div>
+        <div class="footer-space"></div>
+
+        <!-- 主内容区 -->
+        <main class="main-content">
+            <section class="section-title">
+                <h1 class="title-text">交互设计项目</h1>
+                <div class="title-underline"></div>
+            </section>
+            
+            <!-- 项目卡片 -->
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-info">
+                        <h2 class="project-name">MatchUs小程序体验优化设计</h2>
+                        <!-- 修复 data-target 属性 -->
+                        <button class="project-button" data-target="Mu-details">查看详情</button>
+                    </div>
+                    <img class="project-image" src="./assets/p2.png" alt="MatchUs小程序体验优化设计">
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-info">
+                        <div class="project-content">
+                            <div class="project-name">To be continued...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 项目详情 -->
+            <div class="project-detail" id="Mu-details">
+                <div class="detail-card"></div>
+                <div class="detail-title">
+                    MatchUs小程序体验优化设计
+                    <div class="title-indicator"></div>
+                </div>
+                <div class="detail-date">2024.11-2024.12</div>
+                <div class="detail-subtitle">
+                    <span>《用户体验与产品创新设计》</span>
+                    <span class="bold">课程作业</span>
+                </div>
+                <div class="detail-description">
+                    <p>在这一项目中，我与组员（共4人）联系了MatchUs小程序的负责人，我们通过对小程序进行体验、对后台数据进行分析、和对相关竞品进行分析，合作完成了小程序的体验优化设计。</p>
+                    <p>我在项目中主要负责<strong>交互页面设计、海报制作</strong>等工作，图中为调研海报、结课海报和修改后的高保真</p>
+                </div>
+                <img class="detail-image" src="./assets/p21.png" alt="MatchUs小程序体验优化设计">
+            </div>
+        </main>
+        <!-- Footer Padding -->
+        <div class="footer-space"></div>
+
+        <!-- Footer Image -->
+        <footer class="footer">
+        <img src="./assets/footer.png" alt="页脚图像" class="footer-img">
+        </footer>
+        <script src="./js/main.js" defer></script>
+    </div>
+</body>
+</html>

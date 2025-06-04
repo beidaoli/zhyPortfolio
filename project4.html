@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目详情滚动定位</title>
+    <title>Snowline - 产品设计项目展示</title>
+  <link rel="stylesheet" href="css/project2.css"> 
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 页眉部分 -->
+        <header class="header">
+        <div class="logo nav-btn" data-target="home.html">Snowline</div>
+        <nav class="nav">
+            <div class="tab nav-btn" data-target="profile.html">个人简介</div>
+            <div class="tab nav-btn" data-target="projects.html">项目经历</div>
+            <div class="tab nav-btn" data-target="contact.html">联系方式</div>
+        </nav>
+        </header>
+        
+        <!-- Footer Padding -->
+        <div class="footer-space"></div>
+        <div class="footer-space"></div>
+        <div class="footer-space"></div>
+        
+        <!-- 主内容区 -->
+        <main class="main-content">
+            <section class="section-title">
+                <h1 class="title-text">产品设计项目</h1>
+                <div class="title-underline"></div>
+            </section>
+            
+            <!-- 项目卡片 -->
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-info">
+                        <h2 class="project-name">智能提醒充电宝</h2>
+                        <!-- 修复 data-target 属性 -->
+                        <button class="project-button" data-target="power-details">查看详情</button>
+                    </div>
+                    <img class="project-image" src="./assets/p4a.png" alt="智能提醒充电宝">
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-info">
+                        <h2 class="project-name">儿童成长信箱</h2>
+                        <!-- 修复 data-target 属性 -->
+                        <button class="project-button" data-target="child-details">查看详情</button>
+                    </div>
+                    <img class="project-image" src="./assets/p4b.png" alt="儿童成长信箱">
+                </div>
+            </div>
+            
+            <!-- 项目详情 -->
+            <div class="project-detail" id="power-details">
+                <div class="detail-card"></div>
+                <div class="detail-title">
+                    Cuckoo：智能提醒充电宝设计
+                    <div class="title-indicator"></div>
+                </div>
+                <div class="detail-date">2023.11-2024.01</div>
+                <div class="detail-subtitle">
+                    <span>2023NextLab工作坊</span>
+                    <span class="bold">一作投递红点作品</span>
+                </div>
+                <div class="detail-description">
+                    <p>在这一项目中，我与研究生学姐一起脑暴并设计了这一智能充电宝作品。充电宝的功能是在用户长时间使用手机时弹出布谷鸟玩偶并通过提示音提醒用户，从而达到减少电子产品使用的目的。</p>
+                    <p>我在项目中负责了产品概念的提出、渲染及投递的版面制作。</p>
+                </div>
+                <img class="detail-image" src="./assets/p41.png" alt="智能提醒充电宝">
+            </div>
+
+            <div class="project-detail" id="child-details">
+                <div class="detail-card"></div>
+                <div class="detail-title">
+                    Bamboox：模块化儿童成长信箱设计
+                    <div class="title-indicator"></div>
+                </div>
+                <div class="detail-date">2024.03-2024.06</div>
+                <div class="detail-subtitle">
+                    <span>《设计思维与表达》</span>
+                    <span class="bold">课程作业</span>
+                </div>
+                <div class="detail-description">
+                    <p>在这一项目中，我与组员（共3人）产出了一个面向儿童成长记录的”可生长“信箱产品。我们化用了竹子”节节高“的寓意，讲信箱的外观设计为抽象化的竹节。通过加入新的模块来实现信箱的生长，鼓励孩子以一种有趣的反思用文字记录成长点滴。</p>
+                    <p>我在本项目中主要参与了头脑风暴、草图绘制、版面设计与介绍视频的剪辑工作。</p>
+                </div>
+                <img class="detail-image" src="./assets/p42.png" alt="儿童成长信箱">
+            </div>
+        </main>
+        <!-- Footer Padding -->
+        <div class="footer-space"></div>
+
+        <!-- Footer Image -->
+        <footer class="footer">
+        <img src="./assets/footer.png" alt="页脚图像" class="footer-img">
+        </footer>
+        <script src="./js/main.js" defer></script>
+    </div>
+</body>
+</html>

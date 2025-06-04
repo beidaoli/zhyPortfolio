@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目详情滚动定位</title>
+    <title>Snowline - 服务设计项目展示</title>
+  <link rel="stylesheet" href="css/project.css"> 
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 页眉部分 -->
+        <header class="header">
+        <div class="logo nav-btn" data-target="home.html">Snowline</div>
+        <nav class="nav">
+            <div class="tab nav-btn" data-target="profile.html">个人简介</div>
+            <div class="tab nav-btn" data-target="projects.html">项目经历</div>
+            <div class="tab nav-btn" data-target="contact.html">联系方式</div>
+        </nav>
+        </header>
+
+        <!-- Footer Padding -->
+        <div class="footer-space"></div>
+        <div class="footer-space"></div>
+        <div class="footer-space"></div>
+        
+        <!-- 主内容区 -->
+        <main class="main-content">
+            <section class="section-title">
+                <h1 class="title-text">服务设计项目</h1>
+                <div class="title-underline"></div>
+            </section>
+            
+            <!-- 项目卡片 -->
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-info">
+                        <h2 class="project-name">永劫无间主题游园会服务设计</h2>
+                        <!-- 修复 data-target 属性 -->
+                        <button class="project-button" data-target="yongjie-details">查看详情</button>
+                    </div>
+                    <img class="project-image" src="./assets/p1a.png" alt="永劫无间主题游园会">
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-info">
+                        <h2 class="project-name">袜子主题快闪店服务设计与落地</h2>
+                        <!-- 修复 data-target 属性 -->
+                        <button class="project-button" data-target="wazi-details">查看详情</button>
+                    </div>
+                    <img class="project-image" src="./assets/p1.png" alt="袜子主题快闪店">
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-info">
+                        <h2 class="project-name">东京墨田区Ryogoku旅游体验设计</h2>
+                        <!-- 修复 data-target 属性和 ID 拼写 -->
+                        <button class="project-button" data-target="tokyo-details">查看详情</button>
+                    </div>
+                    <img class="project-image" src="./assets/p1c.png" alt="东京墨田区旅游体验">
+                </div>
+            </div>
+            
+            <!-- 项目详情 -->
+            <div class="project-details-container">
+                <article class="project-detail" id="yongjie-details">
+                    <div class="detail-card"></div>
+                    <h2 class="detail-title">永劫无间主题中秋游园会服务设计</h2>
+                    <div class="detail-date">2024.03-2024.06</div>
+                    <div class="detail-subtitle">《服务创新设计》课程作业</div>
+                    <p class="detail-description">
+                        在这一项目中，我与组员（共4人）合作完成了永劫无间主题的中秋嘉年华活动的策划与服务设计，并在6月的课程展中展出。我们设计了如月饼制作、招式模仿、联机对战等一系列玩法。<br>
+                        我在项目中主要负责<strong>策划、视觉、布展</strong>等工作，图中为部分物料的设计与课程最终展览的布置。
+                    </p>
+                    <img class="detail-image" src="./assets/p11.png" alt="永劫无间项目物料">
+                </article>
+                
+                <article class="project-detail" id="wazi-details">
+                    <div class="detail-card"></div>
+                    <h2 class="detail-title">袜子主题快闪店服务设计与落地</h2>
+                    <div class="detail-date">2024.07</div>
+                    <div class="detail-subtitle">《社会创新设计》课程作业</div>
+                    <p class="detail-description">
+                        在这一项目中，我与组员（共5人）合作完成了自选主题的袜子快闪店设计，并在老师带领下完成了店铺的落地与一周的售卖。我们设计了主题IP：一只穿袜子的小黑猫，并选取具有冲击力的颜色作为主题色完成了一系列的周边设计与制作，最终销售额达到200余元，实现了盈利。<br>
+                        我在项目中主要负责<strong>场地对接、视觉设计、布置与售卖工作</strong>，图中为部分物料的设计稿。
+                    </p>
+                    <img class="detail-image" src="./assets/p12.png" alt="袜子快闪店物料">
+                </article>
+                
+                <article class="project-detail" id="tokyo-details">
+                    <div class="detail-card"></div>
+                    <h2 class="detail-title">东京墨田区Ryogoku旅游体验设计</h2>
+                    <div class="detail-date">2025.02</div>
+                    <div class="detail-subtitle">SDI-亚洲校园工作坊</div>
+                    <p class="detail-description">
+                        在这一项目中，我与来自日本、韩国、印尼和中国的组员（共6人）合作完成了东京墨田区両国（Ryogoku）地区的旅游体验设计。我们进行了实地考察，结合両国地区相扑和浮世绘的特色，选择了一条适合游客的观光路线并设计了相关物料。<br>
+                        我在项目中主要负责<strong>物料设计、PPT与海报制作</strong>，图中为我们产出的部分物料。
+                    </p>
+                    <img class="detail-image" src="./assets/p13.png" alt="东京旅游体验物料">
+                </article>
+            </div>
+        </main>
+        <!-- Footer Padding -->
+        <div class="footer-space"></div>
+
+        <!-- Footer Image -->
+        <footer class="footer">
+        <img src="./assets/footer.png" alt="页脚图像" class="footer-img">
+        </footer>
+        <script src="./js/main.js" defer></script>
+    </div>
+</body>
+</html>

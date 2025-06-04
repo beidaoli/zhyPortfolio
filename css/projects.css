@@ -1,0 +1,237 @@
+:root {
+    --primary-gradient: linear-gradient(180deg, #0047CC 0%, #005AFF 50%, #3898FF 100%);
+    --text-color: #25282B;
+    --secondary-text: #828282;
+    --white: #FFFFFF;
+    --shadow: 0px 6px 64px rgba(112, 144, 176, 0.10);
+}
+
+body {
+  margin: 0;
+  font-family: Songti SC, sans-serif;
+  background-color: #F9FAFF;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 63px;
+}
+
+/* 优化后的页眉样式 */
+.header {
+  width: 100%;
+  height: 70px;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #F9FAFF;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  color: #0047CC;
+  font-size: 18px;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  position: fixed;
+  left: 5%;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.nav {
+  display: flex;
+  gap: 48px;
+  position: fixed;
+  right: 5%;
+}
+
+.tab {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 6px 16px;
+  cursor: pointer;
+  line-height: 28px;
+  color: #25282B;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.tab:hover:not(.active) {
+  color: #005AFF;
+}
+
+.tab:hover:not(.active)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 3px;
+  background: #005AFF;
+  border-radius: 2px;
+}
+
+.tab.active {
+  color: white;
+  background: linear-gradient(180deg, #0047CC 0%, #005AFF 50%, #3898FF 100%);
+}
+
+/* Section title */
+.section-title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.title-text {
+  font-size: 48px;
+  font-family: 'Songti SC', serif;
+  font-weight: 700;
+  color: #25282B;
+  line-height: 72px;
+}
+
+.title-text:hover {
+  transform: scale(1.05);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.underline {
+  width: 100px;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(180deg, #0047CC 0%, #005AFF 50%, #3898FF 100%);
+}
+
+/* Projects container */
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+}
+
+/* Single project block */
+.project {
+  width: 992px;
+  height: 524px;
+  border-radius: 24px;
+  box-shadow: 0px 6px 64px rgba(112, 144, 176, 0.1);
+  overflow: hidden;
+  display: flex;
+  background: #ffffff;
+}
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(112, 144, 176, 0.25);
+}
+
+.project-img {
+  width: 496px;
+  height: 524px;
+}
+.project-img:hover{
+  transform: scale(1.05); /* 放大效果 */
+  transition: transform 0.3s ease; /* 平滑过渡 */
+}
+
+.project-info {
+  width: 496px;
+  height: 524px;
+  position: relative;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-content {
+  width: 406.68px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project-title {
+  font-size: 40px;
+  font-family: 'Songti SC', serif;
+  font-weight: 700;
+  color: #25282B;
+  line-height: 60px;
+}
+
+.project-description {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: 'Nunito', sans-serif;
+  color: #828282;
+  line-height: 27px;
+}
+.project-description:hover {
+  color: #3898FF;
+}
+
+
+.project-btn {
+    padding: 8px 24px;
+    background: var(--primary-gradient);
+    border-radius: 24px;
+    max-width: fit-content;
+    color: var(--white);
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 350;
+    line-height: 27px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+}
+.project-btn:hover {
+    background: linear-gradient(180deg, #0047CC 0%, #005AFF 50%, #3898FF 100%);
+    transform: translateY(-2px); /* 上移效果 */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2); /* 增强阴影 */
+}
+
+/* 空白区域 */
+.footer-space {
+  height: 30px; /* 根据需要调整空白高度 */
+}
+
+/* 页脚整体容器 */
+.footer {
+  width: 100vw;              /* 使用视口宽度填满屏幕 */
+  overflow: hidden;          /* 防止图片外溢 */
+  margin-top: 20px;
+}
+
+/* 页脚图片样式 */
+.footer-img {
+  width: 100%;               /* 图片宽度填满容器 */
+  height: auto;              /* 保持纵横比 */
+  display: block;            /* 清除图片底部间隙 */
+}
+
